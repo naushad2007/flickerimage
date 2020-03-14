@@ -1,14 +1,15 @@
-import flickr from './flickr'
+import getRecentFlickr from './getRecentFlickr'
+import searchFlickr from './searchFlickr'
 
 const perPage = 30
 
 const callFlickrEffect = (text, minTakenDate, maxTakenDate, page, successFn, errorFn) => {
   const req = (!text && !minTakenDate && !maxTakenDate)
-    ? flickr.photos.getRecent({
+    ? getRecentFlickr({
       page: page,
       per_page: perPage
     })
-    : flickr.photos.search({
+    : searchFlickr({
       text: text,
       min_taken_date: minTakenDate,
       max_taken_date: maxTakenDate,
