@@ -78,7 +78,7 @@ When users first start the app, there is no search term and no filter being set.
 
 ### Infinite Scroll
 
-When the app makes a request to Flickr API, it will request for 30 photos at a time. This means users will see 10 rows of three images. As users scroll near to the bottom of the list, the app will make another request to get the next 30 photos, and then append it to the bottom of the list. This gives users the "infinite scroll" experience.
+When the app makes a request to Flickr API, it will request 30 photos at a time. This means users will see 10 rows of three images. As users scroll near to the bottom of the list, the app will make another request to get the next 30 photos, and then append it to the bottom of the list. This gives users the "infinite scroll" experience.
 
 ### Error Handling
 
