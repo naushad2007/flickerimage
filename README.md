@@ -5,7 +5,7 @@
 A mobile-first image gallery Progressive Web App (PWA) built with React, React Hooks and Flickr.
 
 <p align="center">
-  <img src="docs/screenshot.png" alt="App main screenshot" width="50%"/>
+  <img src="docs/screenshot.png" alt="App main screenshot" width="25%"/>
 </p>
 
 ## Motivation
@@ -78,7 +78,7 @@ When users first start the app, there is no search term and no filter being set.
 
 ### Infinite Scroll
 
-When the app makes a request to Flickr API, it will request for 30 photos at a time. This means users will see 10 rows of three images. As users scroll near to the bottom of the list, the app will make another request to get the next 30 photos, and then append it to the bottom of the list. This gives users the "infinite scroll" experience.
+When the app makes a request to Flickr API, it will request 30 photos at a time. This means users will see 10 rows of three images. As users scroll near to the bottom of the list, the app will make another request to get the next 30 photos, and then append it to the bottom of the list. This gives users the "infinite scroll" experience.
 
 ### Error Handling
 
@@ -87,13 +87,13 @@ Imagine you are searching for some waterfall photos in the app. While scrolling 
 The app will show you an error message saying that the request failed. However, it doesn't stop you from scrolling up and viewing the previously loaded photos.
 
 <p align="center">
-  <img src="docs/request-failed-try-again.png" alt="Request failed with error." width="50%"/>
+  <img src="docs/request-failed-try-again.png" alt="Request failed with error." width="25%"/>
 </p>
 
 When your network connection is up again, you can click on the "Try again" button, and you will continue where you were left off. You don't need to start all over again.
 
 <p align="center">
-  <img src="docs/request-failed-tried-ok.png" alt="Tried succcessful after request failed." width="50%"/>
+  <img src="docs/request-failed-tried-ok.png" alt="Tried succcessful after request failed." width="25%"/>
 </p>
 
 ## Technical Implementation
